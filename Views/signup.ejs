@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signup</title>
+    <link rel="stylesheet" href="/Stylesheets/signup.css">
+</head>
+<body>
+    <div id="container">
+        <form id="signup_form">
+        <h1 class="center">Signup</h1>
+            <label class="fields"  for="username">Username</label>
+            <input type="text" id="username" name="username" placeholder="Username" oninput="dis_user()">
+            <label id="usrErr" class="err"></label>
+
+            <label class="fields" for="usermail">Mail</label>
+            <input type="text" id="usermail" name="usermail" placeholder="example@example.com" oninput="mail()">
+            <label id="mailErr" class="err"></label>
+            
+            <label class="fields" for="password">Password</label>
+            <input type="password" id="password" name="password" placeholder="******" oninput="pass()">
+            <label id="passErr" class="err"></label>
+            
+            <label class="fields"  for="confirm_password">Confirm Password</label>
+            <input type="password" id="confirm_password" name="confirm_password" placeholder="******" oninput="confpass()">
+            <label id="cpassErr" class="err"></label>
+            
+            <div class="center">
+                <button type="submit" id="signupBtn">Sign up</button>
+            </div>
+        </form>
+        <p>Already have account goto <a href="/">Login</a></p>
+    </div>
+    <script src="/Scripts/signup.js"></script>
+</body>
+</html>

@@ -1,0 +1,136 @@
+body{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    background: #eee;
+}
+
+#load-more{
+    position: relative;
+    align-self: flex-end;
+    justify-self: flex-end;
+    transform: translate(0,-100%);
+}
+
+#load-moreBtn{
+    border: 1px solid #2bf57f;
+    background: #2bf57f;
+    font-size: 16px;
+    border-radius: 5px;
+    padding: 5px;
+    cursor: pointer;
+}
+
+#display_product{
+    display: grid;
+    grid-template-columns: 17% 17% 17% 17% 17%;
+    grid-row-gap: 10px;
+    grid-column-gap: 3%;
+    margin-top: 70px;
+    padding: 5px;
+}
+
+.products{
+    display: flex;
+    flex-direction: column;
+    width: 250px;
+    background: #dddddd;
+    padding: 5px;
+    gap: 10px;
+    justify-content: center;
+    /* align-items: center; */
+}
+
+.thumbnail{
+    width: auto;
+    height: 250px;
+}
+
+.about{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 10px;
+    padding: 15px;
+}
+
+.product-name{
+    overflow-wrap: break-word;
+    overflow: auto;
+}
+
+.view-detailsBtn{
+    cursor: pointer;
+    border: 1px solid #53f513;
+    color: #35ac06;
+    width: 200px;
+    height: 30px;
+    padding: 5px;
+    background: transparent;
+    font-size: 16px;
+    align-self: center;
+    border-radius: 10px;
+    font-weight: bold;
+}
+
+.view-detailsBtn:hover{
+    background: #53f513;
+    color: white;
+}
+
+#product-details{
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    gap: 5px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background: #dddddd;
+    max-height: 700px;
+    max-width: 300px;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+#close-popup{
+    align-self:flex-end;
+    cursor: pointer;
+}
+
+#product-image{
+    width: 300px;
+    height: auto;
+}
+
+#product-description{
+    max-width: 300px;
+    overflow-wrap: break-word;
+}
+
+.pro-inc-dec{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    justify-content: space-between;
+    align-content: center;
+    justify-content: center;
+    max-width: fit-content;
+}
+
+.add-to-cart{
+    border: 1px solid #d5d81c;
+    color: #d5d81c;
+    background: transparent;
+    border-radius: 10px;
+    height: fit-content;
+    font-size: 16px;
+    padding: 5px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.add-to-cart:hover{
+    background: #d5d81c;
+    color: white;
+}

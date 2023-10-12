@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="/Stylesheets/dashboard.css">
+    <link rel="stylesheet" href="/Stylesheets/header.css">
+</head>
+<body>
+    <%- include('header') %>
+    <div id="display_product"></div>
+    
+    <div id="product-details">
+        <span id="close-popup">&#10008</span>
+        <img id="product-image">
+        <h3 id="product-name"></h3>
+        <p id="product-price"></p>
+        <p id="product-description"></p>
+        <button class="add-to-cart">Add to cart</button>
+    </div>
+
+    <div id="load-more">
+        <button id="load-moreBtn">Load More</button>
+    </div>
+
+    <script src="/Scripts/products.js" type="module"></script>
+</body>
+</html>

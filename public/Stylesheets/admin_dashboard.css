@@ -1,0 +1,103 @@
+body{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+#load-more{
+    position: relative;
+    align-self: flex-end;
+    justify-self: flex-end;
+    transform: translate(0,-85%);
+}
+
+#load-moreBtn{
+    border: 1px solid #2bf57f;
+    background: #2bf57f;
+    font-size: 16px;
+    border-radius: 5px;
+    padding: 5px;
+    cursor: pointer;
+}
+
+#display_product{
+    display: grid;
+    grid-template-columns: 17% 17% 17% 17% 17%;
+    grid-row-gap: 10px;
+    grid-column-gap: 3%;
+    margin-top: 70px;
+    padding: 5px;
+}
+
+.thumbnail{
+    width: auto;
+    height: 250px;
+}
+
+.products{
+    display: flex;
+    flex-direction: column;
+    width: 250px;
+    background: #dddddd;
+    padding: 5px;
+    gap: 10px;
+}
+
+.details{
+    display: flex;
+    flex-direction: row;
+}
+
+.inputs, .labels{
+    display: flex;
+    flex-direction: column;
+    width: 170px;
+    gap: 5px;
+}
+
+.labels{
+    gap: 15px;
+}
+
+input{
+    height: 20px;
+}
+
+#product-image{
+    width: 300px;
+    height: auto;
+}
+
+.operations{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.updateBtn,.deleteBtn{
+    width: 110px;
+    height: fit-content;
+    font-weight: bold;
+    font-size: 16px;
+    padding: 5px;
+    cursor: pointer;
+}
+
+.updateBtn{
+    border: 1px solid #0ca9e7;
+    color: #0ca9e7;
+}
+.updateBtn:hover{
+    color: white;
+    background: #0ca9e7;
+}
+
+.deleteBtn{
+    border: 1px solid #6e6e6e;
+    color: #1f1f1f;
+}
+
+.deleteBtn:hover{
+    background: #6e6e6e;
+    color: white;
+}
